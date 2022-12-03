@@ -37,20 +37,20 @@ def submit(s: requests.Session):
 
         # submitted date
         "date": time.strftime(r"%Y-%m-%d", time_now),
-        "jzdz": "北京市怀柔区中国科学院大学雁栖湖校区西区一公寓",     # Residential Address
-        "zrzsdd": "1",                       # Yesterday place to stay    1.雁栖湖  8.京外
+        "jzdz": "北京市怀柔区中国科学院大学雁栖湖校区东区二公寓",     # Residential Address
+        "zrzsdd": "8",                       # Yesterday place to stay    1.雁栖湖  8.京外
         # Whether you are in school or not  1.是, 主要是在雁栖湖校区   5.否
-        "sfzx": "1",
+        "sfzx": "5",
         "szgj": "中国",                       # current country
         "szdd": "国内",                       # current address
         "dqszdd": "1",                       # current location
 
         #
-        "address": "北京市怀柔区",
-        "area": "怀柔区",
-        "province": "北京市",
+        "address": "江西省南昌市青山湖区",
+        "area": "青山湖区",
+        "province": "江西省",
         "city": "",
-        "geo_api_info": "{\"address\":\"北京市怀柔区\",\"details\":\"怀北镇中国科学院大学雁栖湖校区公寓中国科学院大学雁栖湖校区西区\",\"province\":{\"label\":\"北京市\",\"value\":\"\"},\"city\":{\"label\":\"\",\"value\":\"\"},\"area\":{\"label\":\"怀柔区\",\"value\":\"\"}}",
+        "geo_api_info": "{\"address\":\"江西省南昌市青山湖区\",\"details\":\"江西省南昌市青山湖区南京东路庐山花园\",\"province\":{\"label\":\"南昌市\",\"value\":\"\"},\"city\":{\"label\":\"\",\"value\":\"\"},\"area\":{\"label\":\"怀柔区\",\"value\":\"\"}}",
         "szgj_api_info": "{\"area\":{\"label\":\"\",\"value\":\"\"},\"city\":{\"label\":\"\",\"value\":\"\"},\"address\":\"\",\"details\":\"\",\"province\":{\"label\":\"\",\"value\":\"\"}}",
         "szgj_select_info": {},
         #
@@ -88,11 +88,11 @@ def submit(s: requests.Session):
         # "created_uid":"0",
         # "todaysfhsjc":"",
         # "is_daily":1,
-        "geo_api_infot": "{\"address\":\"北京市怀柔区\",\"details\":\"怀北镇中国科学院大学雁栖湖校区公寓中国科学院大学雁栖湖校区西区\",\"province\":{\"label\":\"北京市\",\"value\":\"\"},\"city\":{\"label\":\"\",\"value\":\"\"},\"area\":{\"label\":\"怀柔区\",\"value\":\"\"}}",
+        "geo_api_infot": "{\"address\":\"江西省南昌市青山湖区\",\"details\":\"江西省南昌市青山湖区南京东路庐山花园\",\"province\":{\"label\":\"北京市\",\"value\":\"\"},\"city\":{\"label\":\"\",\"value\":\"\"},\"area\":{\"label\":\"怀柔区\",\"value\":\"\"}}",
 
         # yesterday information
         "old_szdd": "国内",
-        "old_city": "{\"address\":\"北京市怀柔区\",\"details\":\"怀北镇中国科学院大学雁栖湖校区公寓中国科学院大学雁栖湖校区西区\",\"province\":{\"label\":\"北京市\",\"value\":\"\"},\"city\":{\"label\":\"\",\"value\":\"\"},\"area\":{\"label\":\"怀柔区\",\"value\":\"\"}}",
+        "old_city": "{\"address\":\"江西省南昌市青山湖区\",\"details\":\"江西省南昌市青山湖区南京东路庐山花园\",\"province\":{\"label\":\"北京市\",\"value\":\"\"},\"city\":{\"label\":\"\",\"value\":\"\"},\"area\":{\"label\":\"怀柔区\",\"value\":\"\"}}",
     }
 
     r = s.post("https://app.ucas.ac.cn/ucasncov/api/default/save", data=new_daily)
