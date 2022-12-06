@@ -43,7 +43,7 @@ def submit(s: requests.Session):
         "sfzx": "5",
         "szgj": "中国",                       # current country
         "szdd": "国内",                       # current address
-        "dqszdd": "1",                       # current location
+        "dqszdd": "5",                       # current location
 
         #
         "address": "江西省南昌市青山湖区",
